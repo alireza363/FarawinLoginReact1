@@ -5,7 +5,6 @@ export default function AddContact({ setAddbox, setContacts }) {
   const [mobile, setMobile] = useState("");
   const [name, setName] = useState("");
   const [successAdd, setSuccessAdd] = useState(false);
-
   let mobileValid = () => {
     if (!farawin.mobileRegex.test(mobile)) return false;
     return true;
